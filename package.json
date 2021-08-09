@@ -1,0 +1,19 @@
+{
+  "name": "projet-p3",
+  "version": "1.0.0",
+  "description": "p3 open classroom",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BetsaMe/BetsabeMeneses_3_03062021.git"
+  },
+  "author": "betsabe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BetsaMe/BetsabeMeneses_3_03062021/issues"
+  },
+  "homepage": "https://github.com/BetsaMe/BetsabeMeneses_3_03062021#readme"
+}
