@@ -1,3 +1,16 @@
 $colour-primary: #9356DC; 
 $colour-secondary:#FF79DA ;
 $colour-tertiary:#99E2D0;
+$lightgray-bg:#F6F6F6;
+$darkgray:#353535;
+
+
+@mixin button-gradient {
+    height: 50px;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 25px;
+    background: linear-gradient(170deg, $colour-secondary, $colour-primary);
+}
