@@ -1,28 +1,118 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-body {
+header {
   background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 7px 0px #bbbbbb;
+  z-index: 1;
+}
+header a {
+  font-family: "shrikhand", sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 15px 0 8px;
+}
+header i {
+  position: absolute;
+  top: 26px;
+  left: 30px;
+  color: #353535;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  color: #fff;
+  padding: 15px 10px 38px;
+}
+footer .logofooter {
+  font-family: "shrikhand", sans-serif;
+}
+footer a {
+  margin: 5px 20px;
+  text-decoration: none;
+}
+footer a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+footer i {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.btn {
+  height: 50px;
+  border-radius: 50px;
+  border-style: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 25px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+}
+.btn--commander {
+  padding: 0 45px;
+  margin: 30px 0 50px;
+}
+
+.cardMenu {
+  background-color: #fff;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-decoration: none;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+.cardMenu h4 {
+  width: 100%;
+  margin: 0 0 10px;
+}
+.cardMenu p {
+  width: 90%;
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+.cardMenu span {
+  font-size: 15px;
+}
+
+body {
+  background-color: #F6F6F6;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: "roboto", sans-serif;
 }
 
-/***************************Responsive movil**************************/
-@media screen and (max-width: 480px) {
-  header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 2px 7px 0px #bbbbbb;
-    z-index: 1;
-  }
-  header a {
-    font-family: "shrikhand", sans-serif;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 15px 0 8px;
-  }
+h1, h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
 
+h3 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
   .location {
     display: flex;
     justify-content: center;
@@ -42,30 +132,19 @@ body {
     align-items: center;
     text-align: center;
     background-color: #F6F6F6;
-    padding: 30px;
+    padding: 40px 30px 50px;
   }
   #mainTitle h1 {
-    font-size: 24px;
-    font-weight: bold;
     padding: 0 20px;
     margin: 0;
   }
   #mainTitle p {
-    font-size: 18px;
-    font-weight: 400;
     color: #353535;
-  }
-  #mainTitle button {
-    height: 50px;
-    border-radius: 50px;
-    border-style: none;
-    font-size: 16px;
-    color: #fff;
-    padding: 0 25px;
-    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    margin-bottom: 30px;
   }
 
   #steps {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,28 +247,52 @@ body {
     font-size: 20px;
   }
 
-  footer {
+  /***************************Page restaurant**************************/
+  .menu {
+    position: relative;
+    margin: 0;
+  }
+  .menu .imageRestaurant {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+  .menu .fondGris {
+    background-color: #F6F6F6;
+    border-top-left-radius: 44px;
+    border-top-right-radius: 44px;
+    z-index: 1;
+    position: relative;
+    top: -50px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: #353535;
-    color: #fff;
-    padding: 15px 10px 38px;
+    align-items: center;
   }
-  footer .logofooter {
+  .menu .titleRestaurant {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin-left: 15px;
+  }
+  .menu h2 {
     font-family: "shrikhand", sans-serif;
+    font-size: 27px;
+    margin-top: 25px;
+    margin-right: 20px;
   }
-  footer a {
-    margin: 5px 20px;
-    text-decoration: none;
+  .menu .fa-heart {
+    font-size: 24px;
+    color: #353535;
   }
-  footer a:visited {
-    text-decoration: none;
-    color: #fff;
+  .menu h3 {
+    align-self: flex-start;
+    margin-left: 15px;
   }
-  footer i {
-    font-size: 12px;
-    margin-right: 10px;
+  .menu .greenLine {
+    height: 3px;
+    width: 40px;
+    background-color: #99E2D0;
   }
 }
 
