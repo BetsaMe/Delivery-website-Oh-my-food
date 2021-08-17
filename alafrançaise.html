@@ -5,79 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <i class="fas fa-arrow-left"></i>
-        <nav>
-            <a href=""><img src="images/logo/ohmyfood.png" alt=""></a>
-        </nav>
-        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" style="width: 250px;" alt="">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>        
+        <a class="logo" href="">ohmyfood</a>  
     </header>
-    <main>
-        <h2>À la française</h2>
-        <i class="far fa-heart"></i>
-        <section id="entrees">
-            <h3>Entrées</h3>
-            <a href="">
-                <h4>Tartare de poulpe acidulé</h4>
+    <main class="menu">                
+
+        <img class="imageRestaurant" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"  alt="">
+       
+        <section class="fondGris">
+            <div class="titleRestaurant">
+                <h2>À la française</h2>
+                <i class="fas fa-heart"></i>
+            </div> 
+            
+            <h4>Entrées
+                <div class="greenLine"></div>
+            </h4>        
+            
+            <a class="cardMenu" href="">
+                <h3>Tartare de poulpe acidulé</h3>
                 <p>Aux zestes d'orange</p>
                 <span>25€</span>
             </a>
-            <a href="">
-                <h4>Velouté de légumes d'antan</h4>
+            <a class="cardMenu" href="">
+                <h3>Velouté de légumes d'antan</h3>
                 <p>Carotte, panais, topinambour</p>
                 <span>35€</span>
             </a>
-            <a href="">
-                <h4>Soupe à l'oignon</h4>
+            <a class="cardMenu" href="">
+                <h3>Soupe à l'oignon</h3>
                 <p>Revisitée</p>
                 <span>20€</span>
             </a>
-        </section>
-        <section id="plats">
-            <h3>Plats</h3>
-            <a href="">
-                <h4>Coquilles Saint-Jacques</h4>
+            
+            <h4>Plats
+                <div class="greenLine"></div>
+            </h4>
+
+            <a class="cardMenu" href="">
+                <h3>Coquilles Saint-Jacques</h3>
                 <p>Accompagnées d'une purée de panais</p>
                 <span>40€</span>
             </a>
-            <a href="">
-                <h4>Magret de canard</h4>
+            <a class="cardMenu" href="">
+                <h3>Magret de canard</h3>
                 <p>Et parmentier de pommes de terre</p>
                 <span>35€</span>
             </a>
-            <a href="">
-                <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+            <a class="cardMenu" href="">
+                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
                 <p>Sur son lit de gnocchis aux légumes</p>
                 <span>44€</span>
             </a>
-        </section>
-        <section id="desserts">
-            <h3>Desserts</h3>
-            <a href="">
-                <h4>Pétales de violettes glacés</h4>
+
+            <h4>Desserts
+                <div class="greenLine"></div>
+            </h4>        
+            
+            <a class="cardMenu" href="">
+                <h3>Pétales de violettes glacés</h3>
                 <p>Et purée de noisettes</p>
                 <span>18€</span>
             </a>
-            <a href="">
-                <h4>Fondant au chocolat</h4>
+            <a class="cardMenu" href="">
+                <h3>Fondant au chocolat</h3>
                 <p>Revisité</p>
                 <span>22€</span>
             </a>
-            <a href="">
-                <h4>Millefeuille croustillant</h4>
+            <a class="cardMenu" href="">
+                <h3>Millefeuille croustillant</h3>
                 <p>Myrtilles et pâte d’amande</p>
                 <span>23€</span>
             </a>
+            
+            <button class="btn btn--commander" type="submit">
+                Commander
+            </button> 
         </section>
-        <button type="submit">
-            Commander
-        </button> 
     </main>
     <footer>
+        <a class="logofooter" href="">ohmyfood</a>
         <a href="">
             <i class="fas fa-utensils"></i>
             Proposer un restaurant

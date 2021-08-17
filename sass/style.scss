@@ -18,23 +18,21 @@ h1,h2{
 }
 
 h3{
+    font-size: 18px;
+    font-weight: bold;    
+}
+
+h4{
     font-size: 16px;
     line-height: 26px;
     font-weight: normal;
     text-transform: uppercase;
 }
 
-h4{
-    font-size: 18px;
-    font-weight: bold;
-}
-
 p{
     font-size: 18px;
 }
 
-
-@media screen and (max-width: 480px){
 
 .location{
     display: flex;
@@ -45,8 +43,12 @@ p{
     p{
         font-size: 16px;
         font-weight: 600;
-        margin-left: 15px;        
+        margin-left: 15px;  
+        @media only screen and (min-width: 1024px){
+            font-size: 18px;
+        }      
     }
+    
 }
 
 #mainTitle{
@@ -54,17 +56,44 @@ p{
     flex-direction: column;
     align-items: center;  
     text-align: center;
+    justify-content: center;
     background-color: $lightgray-bg;
     padding: 40px 30px 50px;
     h1{
         padding: 0 20px;
         margin:0;
+        @media only screen and (min-width: 1024px){
+            font-size: 50px;
+            color: #fff;
+            width: 50%;
+            text-align: start;
+            padding: 0;
+        }
     }
     p{ 
         color: $darkgray;  
         margin-bottom: 30px;
+        @media only screen and (min-width: 1024px){
+            color: #fff;
+            font-size: 22px;
+            width: 50%;
+            text-align: start;
+        }
     }
 
+    @media only screen and (min-width: 768px){
+        height: 40vh;
+    }
+    @media only screen and (min-width: 1024px){
+        height: 80vh;
+        background-image: url(/images/img-fond-desktop.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: flex-start;
+        padding: 0 120px;
+    }
+   
 }
 
 #steps {
@@ -73,21 +102,41 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 0;
+    
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    @media only screen and (min-width: 1024px){
+        padding: 50px 80px;
+    }
     h2{
-        align-self: flex-start;
+        text-align: start;
+        width: 90%;
     }
     a{
         display: flex;
-        align-content: center;
-        width: 100%;
+        width: 90%;
         position: relative;
         text-decoration: none;
+        @media only screen and (min-width: 768px){
+            height: 220px;
+            width: 28%;
+            margin: 10px;
+        }
+        @media only screen and (min-width: 1024px){
+            max-width: 280px;
+            margin: 15px;
+            height: 280px;
+        }
     }
+
     .stepNumber{
         position: absolute;
         left:0;
-        top: 8px;
+        top: 14px;
         background-color: $colour-primary;
         width: 25px;
         height: 25px;
@@ -96,6 +145,13 @@ p{
         line-height: 25px;  
         color: #fff; 
         font-size: 14px;
+        @media only screen and (min-width: 768px){
+            top:-28px;
+            width: 35px;
+            height: 35px;
+            line-height: 35px; 
+            font-size: 16px;
+        }
     }
     .stepsText{
         display: flex;
@@ -103,10 +159,30 @@ p{
         width: 100%;
         align-items: center;
         border-radius: 20px;
-        padding: 10px 0;
+        padding: 10px;
         margin-bottom: 20px;
         margin-left: 12px;
-        font-weight: bold;
+        font-weight: bold;        
+        @include cards-shadow;
+        &:hover{
+            background-color: #F5EDFF;
+            i{
+                color:$colour-primary;
+            }
+            
+        }
+        @media only screen and (min-width: 768px){
+            margin: 0 0 30px;            
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        @media only screen and (min-width: 1024px){
+            padding: 20px;
+            p{
+                font-size: 20px;
+            }            
+        }   
     }
     
     i{
@@ -114,20 +190,32 @@ p{
         margin-right: 30px;
         color:#7E7E7E;
         font-size: 18px;
-    }    
+        @media only screen and (min-width: 768px){
+            margin: 20px;
+            font-size: 30px;
+        }
+    }   
 }
 
 
 #restaurants{
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
-    background-color:$lightgray-bg ;
-    width: 100%;
+    background-color:$lightgray-bg;  
+    padding: 40px 0;
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+        margin-bottom: 40px;     
+    }  
+    @media only screen and (min-width: 1024px) {        
+        padding: 50px 80px;        
+    }    
     h2{
-        align-self: flex-start;
-        margin-left: 20px;
+        text-align: start;
+        width: 90%;
     }
     a{        
         display: flex;
@@ -138,7 +226,15 @@ p{
         width: 90%;   
         text-decoration: none; 
         position: relative;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
+        @include cards-shadow;
+        @media only screen and (min-width: 768px){
+            width: 40%;
+            margin: 16px;
+        }
+        @media only screen and (min-width: 1024px){
+            margin: 30px;
+        }
     }
     .new{
         position: absolute;
@@ -158,39 +254,73 @@ p{
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        @media only screen and (min-width: 768px){
+            height: 220px;
+        }
+        @media only screen and (min-width: 1024px){
+            height: 280px;
+        }
     }
 
-    h4{
+    h3{
         margin: 8px 10px 0;
+        @media only screen and (min-width: 768px){
+            margin-left: 15px;
+            margin-bottom: 10px;
+        }
+        @media only screen and (min-width: 1024px){
+            font-size: 20px;
+        }
     }
 
     p{
         margin: 0 10px 16px;
+        @media only screen and (min-width: 768px){
+            margin-left: 15px;
+        }
     }
 
     i{
         position: absolute;
         bottom: 30px;
         right: 30px;
+        padding: 2px;
         font-size: 20px;
-    }           
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color:$colour-primary;
+        color: transparent;
+        &:hover{
+            background: -webkit-linear-gradient(45deg, $colour-primary, $colour-secondary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color:transparent;
+        }
+        @media only screen and (min-width: 1024px){
+            font-size: 25px;
+        }
+    }    
         
 }
 
 
 /***************************Page restaurant**************************/
  
-.menu{   
-    position: relative;
+.menu{       
     margin: 0;
 
     .imageRestaurant{
         width: 100%; 
         height: 280px;
         object-fit: cover;
+        @media only screen and (min-width: 1024px){
+            height: 70vh;
+        }
     }
 
-    .fondGris{
+    .fondGris{ 
+        padding: 0 8px;
+        box-sizing: border-box;
         background-color: $lightgray-bg;
         border-top-left-radius: 44px;
         border-top-right-radius: 44px;
@@ -200,14 +330,17 @@ p{
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media only screen and (min-width: 1024px){
+            padding: 0 80px;
+        }
     }  
     
     .titleRestaurant{
         display: flex;
-        justify-content:flex-start;
+        justify-content:space-between;
         align-items:center;
         width: 90%;
-        margin-left: 15px;        
+        margin: 0 20px;     
     }
     h2{
         font-family: 'shrikhand', sans-serif;
@@ -217,11 +350,24 @@ p{
     }
     .fa-heart{
         font-size: 24px;
+        padding: 2px;
         color: $darkgray;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color:$colour-primary;
+        color: transparent;
+        &:hover{
+            background: -webkit-linear-gradient(45deg, $colour-primary, $colour-secondary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color:transparent;
+        }
     }
-    h3{
-        align-self: flex-start;
-        margin-left: 15px;
+    h4{        
+        width: 94%;
+        @media only screen and (min-width: 1024px){
+            font-size: 18px;
+        }
     }
 
     .greenLine{
@@ -232,4 +378,3 @@ p{
 
 }
 
-}

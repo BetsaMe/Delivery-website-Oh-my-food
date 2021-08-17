@@ -5,79 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <i class="fas fa-arrow-left"></i>
-        <nav>
-            <a href=""><img src="images/logo/ohmyfood.png" alt=""></a>
-        </nav>
-        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" style="width: 250px;" alt="">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>        
+        <a class="logo" href="">ohmyfood</a>  
     </header>
-    <main>
-        <h2>Le délice des sens</h2>
-        <i class="far fa-heart"></i>
-        <section id="entrees">
-            <h3>Entrées</h3>
-            <a href="">
-                <h4>Tartare de thon</h4>
+    <main class="menu">
+        <img class="imageRestaurant" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+
+        <section class="fondGris"> 
+            <div class="titleRestaurant">
+                <h2>Le délice des sens</h2>
+                <i class="fas fa-heart"></i>
+            </div>  
+
+            <h4>Entrées
+                <div class="greenLine"></div>
+            </h4>     
+        
+            <a class="cardMenu" href="">
+                <h3>Tartare de thon</h3>
                 <p>Assaisonné au yuzu</p>
                 <span>25€</span>
             </a>
-            <a href="">
-                <h4>Bouchée de homard croustillant </h4>
+            <a class="cardMenu" href="">
+                <h3>Bouchée de homard croustillant </h3>
                 <p>Et sa farandole de petits légumes</p>
                 <span>35€</span>
             </a>
-            <a href="">
-                <h4>Velouté de cèpes </h4>
+            <a class="cardMenu" href="">
+                <h3>Velouté de cèpes </h3>
                 <p>Aux truffes</p>
                 <span>20€</span>
-            </a>
-        </section>
-        <section id="plats">
-            <h3>Plats</h3>
-            <a href="">
-                <h4>Poulet rôti aux herbes de Provence </h4>
+            </a>        
+        
+            <h4>Plats
+                <div class="greenLine"></div>
+            </h4>
+            <a class="cardMenu" href="">
+                <h3>Poulet rôti aux herbes de Provence </h3>
                 <p>Et sa crème de truffe</p>
                 <span>40€</span>
             </a>
-            <a href="">
-                <h4>Langouste rôtie </h4>
+            <a class="cardMenu" href="">
+                <h3>Langouste rôtie </h3>
                 <p>Et ses légumes de saison</p>
                 <span>35€</span>
             </a>
-            <a href="">
-                <h4>Côte de boeuf Angus</h4>
+            <a class="cardMenu" href="">
+                <h3>Côte de boeuf Angus</h3>
                 <p>Et sa purée de panais</p>
                 <span>44€</span>
             </a>
-        </section>
-        <section id="desserts">
-            <h3>Desserts</h3>
-            <a href="">
-                <h4>Farandole de desserts</h4>
+
+            <h4>Desserts
+                <div class="greenLine"></div>
+            </h4>
+
+            <a class="cardMenu" href="">
+                <h3>Farandole de desserts</h3>
                 <p>Du chef</p>
                 <span>18€</span>
             </a>
-            <a href="">
-                <h4>Crème brulée </h4>
+            <a class="cardMenu" href="">
+                <h3>Crème brulée </h3>
                 <p>Revisité</p>
                 <span>22€</span>
             </a>
-            <a href="">
-                <h4>Tiramisu </h4>
+            <a class="cardMenu" href="">
+                <h3>Tiramisu </h3>
                 <p>À la noisette</p>
                 <span>23€</span>
             </a>
+            <button class="btn btn--commander" type="submit">
+                Commander
+            </button> 
         </section>
-        <button type="submit">
-            Commander
-        </button> 
+        
     </main>
     <footer>
+        <a class="logofooter" href="">ohmyfood</a>
         <a href="">
             <i class="fas fa-utensils"></i>
             Proposer un restaurant

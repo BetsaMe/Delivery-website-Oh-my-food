@@ -5,85 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <i class="fas fa-arrow-left"></i>
-        <nav>
-            <a href=""><img src="images/logo/ohmyfood.png" alt=""></a>
-        </nav>
-        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" style="width: 250px;" alt="">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>        
+        <a class="logo" href="">ohmyfood</a>  
     </header>
-    <main>
-        <h2>La note enchantée</h2>
-        <i class="far fa-heart"></i>
-        <section id="entrees">
-            <h3>Entrées</h3>
-            <a href="">
-                <h4>Ravioles de foie gras </h4>
+    <main class="menu">
+
+        <img class="imageRestaurant" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+       
+        <section class="fondGris"> 
+            <div class="titleRestaurant">
+                <h2>La note enchantée</h2>
+                <i class="fas fa-heart"></i>
+            </div>        
+        
+            <h4>Entrées
+                <div class="greenLine"></div>
+            </h4>
+
+            <a class="cardMenu" href="">
+                <h3>Ravioles de foie gras </h3>
                 <p>Accompagnés de leur crème à la truffe</p>
                 <span>25€</span>
             </a>
-            <a href="">
-                <h4>Caviar osciètre </h4>
+            <a class="cardMenu" href="">
+                <h3>Caviar osciètre </h3>
                 <p>Sur blini à la farine de blé noir</p>
                 <span>35€</span>
             </a>
-            <a href="">
-                <h4>Homard et espuma de potiron</h4>
+            <a class="cardMenu" href="">
+                <h3>Homard et espuma de potiron</h3>
                 <p>Mariné aux zestes d'orange</p>
                 <span>20€</span>
             </a>
-            <a href="">
-                <h4>Foie gras de canard cuit entier</h4>
+            <a class="cardMenu" href="">
+                <h3>Foie gras de canard cuit entier</h3>
                 <p>Confiture de figue et pain toasté</p>
                 <span>35€</span>
             </a>
-        </section>
-        <section id="plats">
-            <h3>Plats</h3>
-            <a href="">
-                <h4>Noix de coquilles Saint-Jacques</h4>
+        
+            <h4>Plats
+                <div class="greenLine"></div>
+            </h4>
+
+            <a class="cardMenu" href="">
+                <h3>Noix de coquilles Saint-Jacques</h3>
                 <p>Sur lit de purée de céleri-rave</p>
                 <span>40€</span>
             </a>
-            <a href="">
-                <h4>Langoustine poêlée</h4>
+            <a class="cardMenu" href="">
+                <h3>Langoustine poêlée</h3>
                 <p>Purée de patate douce</p>
                 <span>35€</span>
             </a>
-            <a href="">
-                <h4>Mijoté de queue de boeuf </h4>
+            <a class="cardMenu" href="">
+                <h3>Mijoté de queue de boeuf </h3>
                 <p>Et riz sauvage aux zestes de citron</p>
                 <span>44€</span>
             </a>
-        </section>
-        <section id="desserts">
-            <h3>Desserts</h3>
-            <a href="">
-                <h4>Macaron noisette et chocolat</h4>
+        
+        
+            <h4>Desserts
+                <div class="greenLine"></div>
+            </h4>
+
+            <a class="cardMenu" href="">
+                <h3>Macaron noisette et chocolat</h3>
                 <p>Glace au caramel brun et sel de Guérande</p>
                 <span>18€</span>
             </a>
-            <a href="">
-                <h4>Baba au rhum revisité </h4>
+            <a class="cardMenu" href="">
+                <h3>Baba au rhum revisité </h3>
                 <p>Avec son coulis de citron</p>
                 <span>22€</span>
             </a>
-            <a href="">
-                <h4>Tarte au citron meringuée</h4>
+            <a class="cardMenu" href="">
+                <h3>Tarte au citron meringuée</h3>
                 <p>Déstructurée</p>
                 <span>23€</span>
             </a>
-        </section>
-        <button type="submit">
-            Commander
-        </button>  
+
+            <button class="btn btn--commander" type="submit">
+                Commander
+            </button> 
+
+        </section>         
     </main>
         
     <footer>
+        <a class="logofooter" href="">ohmyfood</a>
         <a href="">
             <i class="fas fa-utensils"></i>
             Proposer un restaurant

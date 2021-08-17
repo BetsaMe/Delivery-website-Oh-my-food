@@ -5,16 +5,30 @@
     font-size: 16px;
     color: #fff;
     padding: 0 25px;
+    @include button-shadow;
     @include button-gradient;
+    &:hover{
+        transform: translate(0px,-7px);
+        transition: transform .5s;  
+    }
+    
     &--commander{
         padding: 0 45px;
-        margin: 30px 0 50px;
+        margin: 30px 0 0;
     }
+    
+    @media only screen and (min-width: 1024px){
+        height: 60px;
+        font-size: 20px;
+        padding: 0 65px;
+        box-shadow: none;
+    }
+    
 }
 
 .cardMenu{
     background-color: #fff;
-    width: 90%;
+    width: 93%;
     padding: 10px;        
     display: flex;
     flex-wrap: wrap;
@@ -22,16 +36,31 @@
     text-decoration: none;
     margin-bottom: 15px;
     border-radius: 15px;
-    h4{
+    box-sizing: border-box;
+    @include cards-shadow;
+    @media only screen and (min-width: 1024px){
+        height: 120px;
+        padding-left: 80px;
+    }
+    h3{
         width: 100%;
         margin: 0 0 10px;
+        @media only screen and (min-width: 1024px){
+            font-size: 20px;
+        }
     }
     p{
         width: 90%;
         margin: 0 0 10px;
         font-size: 15px;
+        @media only screen and (min-width: 1024px){
+            font-size: 18px;
+        }
     }
     span{
         font-size: 15px;
+        @media only screen and (min-width: 1024px){
+            font-size: 18px;
+        }
     }
 }
