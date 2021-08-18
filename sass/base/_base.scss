@@ -1,0 +1,28 @@
+body{
+    background-color: $lightgray-bg;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+h1,h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: bold;    
+}
+
+h4{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 18px;
+}

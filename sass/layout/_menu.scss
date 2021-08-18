@@ -1,0 +1,71 @@
+ .menu{       
+    margin: 0;
+
+    .imageRestaurant{
+        width: 100%; 
+        height: 280px;
+        object-fit: cover;
+        @media only screen and (min-width: 1024px){
+            height: 70vh;
+        }
+    }
+
+    .fondGris{ 
+        padding: 0 8px;
+        box-sizing: border-box;
+        background-color: $lightgray-bg;
+        border-top-left-radius: 44px;
+        border-top-right-radius: 44px;
+        z-index: 1;
+        position: relative;
+        top:-50px;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media only screen and (min-width: 1024px){
+            padding: 0 80px;
+        }
+    }  
+    
+    .titleRestaurant{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        width: 90%;
+        margin: 0 20px;     
+    }
+    h2{
+        font-family: 'shrikhand', sans-serif;
+        font-size: 27px;
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+    .fa-heart{
+        font-size: 24px;
+        padding: 2px;
+        color: $darkgray;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color:$colour-primary;
+        color: transparent;
+        &:hover{
+            background: -webkit-linear-gradient(45deg, $colour-primary, $colour-secondary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color:transparent;
+        }
+    }
+    h4{        
+        width: 94%;
+        @media only screen and (min-width: 1024px){
+            font-size: 18px;
+        }
+    }
+
+    .greenLine{
+        height: 3px;
+        width: 40px;
+        background-color: #99E2D0;
+    }
+
+}
