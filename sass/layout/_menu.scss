@@ -11,7 +11,7 @@
     }
 
     .fondGris{ 
-        padding: 0 8px;
+        padding: 0 14px;
         box-sizing: border-box;
         background-color: $lightgray-bg;
         border-top-left-radius: 44px;
@@ -22,19 +22,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media only screen and (min-width: 768px){
+            padding: 0 25px;
+        }
         @media only screen and (min-width: 1024px){
             padding: 0 80px;
         }
-    }  
+    } 
     
     .titleRestaurant{
         display: flex;
         justify-content:space-between;
         align-items:center;
-        width: 90%;
+        width: 100%;
         margin: 0 20px;     
     }
-    h2{
+    h1{
         font-family: 'shrikhand', sans-serif;
         font-size: 27px;
         margin-top: 25px;
@@ -55,17 +58,24 @@
             -webkit-text-stroke-color:transparent;
         }
     }
-    h4{        
-        width: 94%;
+    h2{  
+        font-size: 16px;
+        font-weight: normal;
+        text-transform: uppercase;      
+        width: 100%;
         @media only screen and (min-width: 1024px){
             font-size: 18px;
         }
     }
 
-    .greenLine{
-        height: 3px;
+    hr{
         width: 40px;
-        background-color: #99E2D0;
+        height:3px;
+        border-width:0;
+        color:#99E2D0;
+        background-color:#99E2D0;
+        margin: 5px 0;
     }
 
 }
+
