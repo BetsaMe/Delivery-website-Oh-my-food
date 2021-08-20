@@ -250,26 +250,12 @@
             margin-left: 15px;
         }
     }
-
-    i{
+    
+    .fa-stack{
         position: absolute;
-        bottom: 30px;
+        bottom: 25px;
         right: 30px;
-        padding: 2px;
-        font-size: 20px;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color:$colour-primary;
-        color: transparent;
-        &:hover{
-            background: -webkit-linear-gradient(45deg, $colour-primary, $colour-secondary);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-color:transparent;
-        }
-        @media only screen and (min-width: 1024px){
-            font-size: 25px;
-        }
+        padding: 2px;     
     }    
         
 }

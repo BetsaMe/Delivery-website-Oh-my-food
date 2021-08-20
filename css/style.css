@@ -39,6 +39,11 @@ header .logo {
   font-size: 30px;
   padding: 15px 0 8px;
 }
+@media only screen and (min-width: 1024px) {
+  header .logo {
+    font-size: 35px;
+  }
+}
 header i {
   position: absolute;
   top: 26px;
@@ -129,21 +134,6 @@ footer i {
   margin-top: 25px;
   margin-right: 20px;
 }
-.menu .fa-heart {
-  font-size: 24px;
-  padding: 2px;
-  color: #353535;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #9356DC;
-  color: transparent;
-}
-.menu .fa-heart:hover {
-  background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: transparent;
-}
 .menu h2 {
   font-size: 16px;
   font-weight: normal;
@@ -159,7 +149,6 @@ footer i {
   width: 40px;
   height: 3px;
   border-width: 0;
-  color: #99E2D0;
   background-color: #99E2D0;
   margin: 5px 0;
 }
@@ -237,6 +226,34 @@ footer i {
     padding: 0 65px;
     margin-top: 60px;
   }
+}
+
+.fa-stack .fa-heart {
+  font-size: 24px;
+  padding: 2px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  .fa-stack .fa-heart {
+    font-size: 30px;
+  }
+}
+.fa-stack .far {
+  background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-stack .fas {
+  background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 800ms;
+}
+.fa-stack .fas:hover {
+  opacity: 1;
 }
 
 .location {
@@ -526,27 +543,11 @@ footer i {
     margin-left: 15px;
   }
 }
-#restaurants i {
+#restaurants .fa-stack {
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
   right: 30px;
   padding: 2px;
-  font-size: 20px;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #9356DC;
-  color: transparent;
-}
-#restaurants i:hover {
-  background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: transparent;
-}
-@media only screen and (min-width: 1024px) {
-  #restaurants i {
-    font-size: 25px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
