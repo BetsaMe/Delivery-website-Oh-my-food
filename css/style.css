@@ -240,15 +240,19 @@ footer i {
 }
 .fa-stack .far {
   background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
+  background-size: 100%;
   -webkit-background-clip: text;
-  background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .fa-stack .fas {
   background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
+  background-size: 100%;
   -webkit-background-clip: text;
-  background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   opacity: 0;
   transition: opacity 800ms;
 }
