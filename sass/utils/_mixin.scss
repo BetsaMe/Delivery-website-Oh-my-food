@@ -1,11 +1,17 @@
 @mixin button-gradient {    
-    background: linear-gradient(170deg, $colour-secondary, $colour-primary);
+    background:  linear-gradient(337deg, ($colour-primary) 34%, ($colour-secondary) 89%);
 }
 
-@mixin button-shadow{    
-    box-shadow: 2px 4px 10px rgb(187, 185, 185);
+@mixin button-gradient-hover {    
+    background: linear-gradient(337deg, lighten($colour-primary, 4),lighten($colour-secondary, 4));
 }
+
+@mixin button-shadow($colour){    
+    box-shadow: 0px 4px 10px $colour;
+}
+
 
 @mixin cards-shadow{    
     box-shadow: 0px 5px 10px rgb(224, 224, 224);
 }
+
