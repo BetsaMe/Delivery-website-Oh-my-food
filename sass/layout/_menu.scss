@@ -6,9 +6,10 @@
         height: 280px;
         object-fit: cover;
         @media only screen and (min-width: 1024px){
-            height: 70vh;
+            height: 60vh;
         }
     }
+    
 
     .fondGris{ 
         padding: 0 14px;
@@ -25,8 +26,12 @@
         @media only screen and (min-width: 768px){
             padding: 0 25px;
         }
-        @media only screen and (min-width: 1024px){
-            padding: 0 80px;
+        @media only screen and (min-width: 1240px){
+            padding: 0 25px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
         }
     } 
     
@@ -35,13 +40,28 @@
         justify-content:space-between;
         align-items:center;
         width: 100%;
-        margin: 0 20px;     
+        margin: 0 20px;   
+        @media only screen and (min-width: 768px){
+            width: 95%;
+        }  
     }
     h1{
         font-family: 'shrikhand', sans-serif;
         font-size: 27px;
         margin-top: 25px;
         margin-right: 20px;
+    }
+
+    .menuSection{
+        width: 100%;
+        box-sizing: border-box;
+        @media only screen and (min-width: 768px){
+            width: 95%;
+        }
+        @media only screen and (min-width: 1240px){
+            width: 30%;
+            margin: 15px;
+        }
     }
     
     
@@ -50,7 +70,7 @@
         font-weight: normal;
         text-transform: uppercase;      
         width: 100%;
-        @media only screen and (min-width: 1024px){
+        @media only screen and (min-width: 1240px){
             font-size: 18px;
         }
     }

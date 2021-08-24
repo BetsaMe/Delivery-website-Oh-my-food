@@ -20,7 +20,7 @@
         &:focus{
             outline: none;
         }
-        @media only screen and (min-width: 1024px){
+        @media only screen and (min-width: 1240px){
             font-size: 18px;
         }      
     }
@@ -38,7 +38,7 @@
     h1{
         padding: 0 20px;
         margin:0;
-        @media only screen and (min-width: 1024px){
+        @media only screen and (min-width: 1240px){
             font-size: 50px;
             padding: 0;
         }
@@ -46,7 +46,7 @@
     p{ 
         color: $darkgray;  
         margin-bottom: 30px;
-        @media only screen and (min-width: 1024px){            
+        @media only screen and (min-width: 1240px){            
             font-size: 22px;
         }
     }
@@ -54,8 +54,8 @@
     @media only screen and (min-width: 768px){
         height: 40vh;
     }
-    @media only screen and (min-width: 1024px){
-        height: 70vh;
+    @media only screen and (min-width: 1240px){
+        height: 50vh;
         padding: 0 120px;
     }   
 }
@@ -73,10 +73,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         padding: 40px 50px;
-        justify-content: space-between;
+        justify-content: center;
     }
     
-    @media only screen and (min-width: 1024px){
+    @media only screen and (min-width: 1240px){
         padding: 50px 80px;
         justify-content: center;
     }
@@ -94,7 +94,7 @@
             width: 28%;
             margin: 10px;
         }
-        @media only screen and (min-width: 1024px){
+        @media only screen and (min-width: 1240px){
             max-width: 280px;
             margin: 15px;
             height: 280px;
@@ -145,7 +145,7 @@
             text-align: center;
             justify-content: center;
         }
-        @media only screen and (min-width: 1024px){
+        @media only screen and (min-width: 1240px){
             padding: 20px;
             p{
                 font-size: 20px;
@@ -176,11 +176,11 @@
     @media only screen and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between; 
-        padding: 40px 50px;
+        justify-content: center; 
+        padding: 40px 30px;
         margin-bottom: 40px;     
     }  
-    @media only screen and (min-width: 1024px) {        
+    @media only screen and (min-width: 1240px) {        
         padding: 50px 80px;   
         justify-content: center;     
     }    
@@ -203,8 +203,9 @@
             width: 42%;
             margin: 16px;
         }
-        @media only screen and (min-width: 1024px){
+        @media only screen and (min-width: 1240px){
             margin: 30px;
+            width: 35%;
         }
     }
     .new{
@@ -228,7 +229,7 @@
         @media only screen and (min-width: 768px){
             height: 220px;
         }
-        @media only screen and (min-width: 1024px){
+        @media only screen and (min-width: 1240px){
             height: 280px;
         }
     }
@@ -239,7 +240,7 @@
             margin-left: 15px;
             margin-bottom: 10px;
         }
-        @media only screen and (min-width: 1024px){
+        @media only screen and (min-width: 1240px){
             font-size: 20px;
         }
     }
