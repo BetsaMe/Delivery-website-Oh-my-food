@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.loader-wraper {
+.loader-bg {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -8,7 +8,6 @@
   z-index: 1000;
   animation: bg-anim 3s linear backwards;
   opacity: 0;
-  display: none;
 }
 
 @keyframes bg-anim {
@@ -29,8 +28,10 @@
   border: 10px solid #f3f3f3;
   border-radius: 50%;
   border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
   -webkit-animation: spin 1s linear backwards;
-  animation: spin 3s linear backwards;
+  animation: spin 2s linear backwards;
+  opacity: 0;
 }
 
 @-webkit-keyframes spin {
@@ -416,13 +417,13 @@ footer i {
   }
 }
 
-.fa-stack i {
+.fa-stack .fa-heart {
   font-size: 24px;
   padding: 2px;
   cursor: pointer;
 }
 @media only screen and (min-width: 1024px) {
-  .fa-stack i {
+  .fa-stack .fa-heart {
     font-size: 30px;
   }
 }
@@ -437,17 +438,19 @@ footer i {
 }
 .fa-stack .fas {
   background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
-  background-size: 100%;
+  background-size: 0%;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   opacity: 0;
-  transition: opacity 800ms;
+  transition: all 800ms ease-in-out;
 }
 .fa-stack:hover > .fas {
   opacity: 1;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .location {
