@@ -1,4 +1,4 @@
- .menu{       
+ .pageRestaurant{       
     margin: 0;
 
     .imageRestaurant{
@@ -9,12 +9,10 @@
             height: 60vh;
         }
     }
-    
-
     .fondGris{ 
         padding: 0 14px;
         box-sizing: border-box;
-        background-color: $lightgray-bg;
+        background-color: #f6f6f6;
         border-top-left-radius: 44px;
         border-top-right-radius: 44px;
         z-index: 1;
@@ -22,17 +20,8 @@
         top:-50px;        
         display: flex;
         flex-direction: column;
-        align-items: center;
-        @media only screen and (min-width: 768px){
-            padding: 0 25px;
-        }
-        @media only screen and (min-width: 1240px){
-            padding: 0 25px;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
-        }
+        align-items: center; 
+        justify-content: center;
     } 
     
     .titleRestaurant{
@@ -42,8 +31,9 @@
         width: 100%;
         margin: 0 20px;   
         @media only screen and (min-width: 768px){
-            width: 95%;
+            width: 90%;
         }  
+        
     }
     h1{
         font-family: 'shrikhand', sans-serif;
@@ -52,15 +42,34 @@
         margin-right: 20px;
     }
 
-    .menuSection{
+    .containerMenu{
         width: 100%;
         box-sizing: border-box;
-        @media only screen and (min-width: 768px){
-            width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media only screen and (min-width: 1440px){            
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
         }
-        @media only screen and (min-width: 1240px){
+          
+    }
+
+    .menuSection{
+        width: 100%;
+        @media only screen and (min-width: 768px){
+            width: 80%;
+        }
+        @media only screen and (min-width: 1024px){
+            width: 60%;
+            max-width: 700px;
+        }
+        @media only screen and (min-width: 1440px){
             width: 30%;
-            margin: 15px;
+            max-width: 470px;
+            margin: 20px;
         }
     }
     

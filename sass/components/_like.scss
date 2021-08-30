@@ -1,6 +1,6 @@
 .fa-stack{
     .fa-heart{
-        font-size: 24px;
+        font-size: 24px; 
         padding: 2px;
         cursor: pointer;
         @media only screen and (min-width: 1024px){
@@ -8,18 +8,10 @@
         }
     }
     .far{
-        background: -webkit-linear-gradient(45deg, $colour-primary, $colour-secondary);
-        background-size: 100%;
-        background-clip: text;
-        -webkit-background-clip: text;  
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent;
-    }
+        color: #949296;
+        }
     .fas{
         background: -webkit-linear-gradient(45deg, $colour-primary, $colour-secondary);
-        background-size: 0%; 
-        background-clip: text;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -29,8 +21,7 @@
     }
     
     &:hover > .fas{        
-        opacity: 1;
-        background-size: 100%;  
+        opacity: 1;  
         background-repeat: no-repeat; 
     }
 

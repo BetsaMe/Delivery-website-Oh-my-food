@@ -1,19 +1,20 @@
 .loader-bg{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: #fff;
-    z-index: 1000;
-    animation: bg-anim 3s linear backwards;
+    animation: bg-anim 3s 1s linear both;
     opacity: 0; 
 }
 @keyframes bg-anim {
     0% {
         opacity: 1;
+        z-index: 1000;
     }
     
     100% {
-        opacity: 0;      
+        opacity: 0;  
+        z-index: -1000;           
     }
     
 }
@@ -24,12 +25,12 @@
     width: 120px;
     height: 120px;
     margin: -76px 0 0 -76px;
-    border: 10px solid #f3f3f3;
+    border: 5px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 10px solid #9356DC;
-    border-bottom: 10px solid #FF79DA;
-    -webkit-animation: spin 1s linear backwards;
-    animation: spin 2s linear backwards;
+    border-top: 5px solid #9356DC;
+    border-bottom: 5px solid #FF79DA;
+    -webkit-animation: spin 3s linear backwards;
+    animation: spin 3s linear backwards;
     opacity: 0;
   }
   

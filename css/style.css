@@ -1,21 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .loader-bg {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background-color: #fff;
-  z-index: 1000;
-  animation: bg-anim 3s linear backwards;
+  animation: bg-anim 3s 1s linear both;
   opacity: 0;
 }
 
 @keyframes bg-anim {
   0% {
     opacity: 1;
+    z-index: 1000;
   }
   100% {
     opacity: 0;
+    z-index: -1000;
   }
 }
 .loader {
@@ -25,12 +26,12 @@
   width: 120px;
   height: 120px;
   margin: -76px 0 0 -76px;
-  border: 10px solid #f3f3f3;
+  border: 5px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
-  -webkit-animation: spin 1s linear backwards;
-  animation: spin 2s linear backwards;
+  border-top: 5px solid #9356DC;
+  border-bottom: 5px solid #FF79DA;
+  -webkit-animation: spin 3s linear backwards;
+  animation: spin 3s linear backwards;
   opacity: 0;
 }
 
@@ -146,23 +147,23 @@ footer i {
   }
 }
 
-.menu {
+.pageRestaurant {
   margin: 0;
 }
-.menu .imageRestaurant {
+.pageRestaurant .imageRestaurant {
   width: 100%;
   height: 280px;
   object-fit: cover;
 }
 @media only screen and (min-width: 1024px) {
-  .menu .imageRestaurant {
+  .pageRestaurant .imageRestaurant {
     height: 60vh;
   }
 }
-.menu .fondGris {
+.pageRestaurant .fondGris {
   padding: 0 14px;
   box-sizing: border-box;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-top-left-radius: 44px;
   border-top-right-radius: 44px;
   z-index: 1;
@@ -171,22 +172,9 @@ footer i {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-@media only screen and (min-width: 768px) {
-  .menu .fondGris {
-    padding: 0 25px;
-  }
-}
-@media only screen and (min-width: 1240px) {
-  .menu .fondGris {
-    padding: 0 25px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-  }
-}
-.menu .titleRestaurant {
+.pageRestaurant .titleRestaurant {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -194,43 +182,64 @@ footer i {
   margin: 0 20px;
 }
 @media only screen and (min-width: 768px) {
-  .menu .titleRestaurant {
-    width: 95%;
+  .pageRestaurant .titleRestaurant {
+    width: 90%;
   }
 }
-.menu h1 {
+.pageRestaurant h1 {
   font-family: "shrikhand", sans-serif;
   font-size: 27px;
   margin-top: 25px;
   margin-right: 20px;
 }
-.menu .menuSection {
+.pageRestaurant .containerMenu {
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 1440px) {
+  .pageRestaurant .containerMenu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.pageRestaurant .menuSection {
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  .menu .menuSection {
-    width: 95%;
+  .pageRestaurant .menuSection {
+    width: 80%;
   }
 }
-@media only screen and (min-width: 1240px) {
-  .menu .menuSection {
+@media only screen and (min-width: 1024px) {
+  .pageRestaurant .menuSection {
+    width: 60%;
+    max-width: 700px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .pageRestaurant .menuSection {
     width: 30%;
-    margin: 15px;
+    max-width: 470px;
+    margin: 20px;
   }
 }
-.menu h2 {
+.pageRestaurant h2 {
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
   width: 100%;
 }
 @media only screen and (min-width: 1240px) {
-  .menu h2 {
+  .pageRestaurant h2 {
     font-size: 18px;
   }
 }
-.menu hr {
+.pageRestaurant hr {
   width: 40px;
   height: 3px;
   border-width: 0;
@@ -250,12 +259,12 @@ footer i {
   overflow: hidden;
   text-decoration: none;
   justify-content: space-between;
-  box-shadow: 0px 5px 10px #e0e0e0;
+  box-shadow: 0px 6px 10px #cacaca;
   animation: cardsMove 800ms both ease-in-out;
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   .cardMenu {
-    height: 110px;
+    margin-bottom: 25px;
   }
 }
 .cardMenu .cardMenuText {
@@ -270,7 +279,7 @@ footer i {
   width: 100%;
   margin: 0 0 10px;
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   .cardMenu h3 {
     margin-top: 8px;
     font-size: 20px;
@@ -284,17 +293,12 @@ footer i {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-@media only screen and (min-width: 1240px) {
-  .cardMenu p {
-    font-size: 18px;
-  }
-}
 .cardMenu span {
   font-size: 15px;
   font-weight: bold;
   width: 10%;
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   .cardMenu span {
     font-size: 18px;
   }
@@ -411,9 +415,10 @@ footer i {
 @media only screen and (min-width: 1024px) {
   .btn {
     height: 60px;
-    font-size: 20px;
+    width: 340px;
+    font-size: 18px;
     padding: 0 65px;
-    margin-top: 60px;
+    margin: 60px 0;
   }
 }
 
@@ -428,18 +433,10 @@ footer i {
   }
 }
 .fa-stack .far {
-  background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #949296;
 }
 .fa-stack .fas {
   background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
-  background-size: 0%;
-  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -449,7 +446,6 @@ footer i {
 }
 .fa-stack:hover > .fas {
   opacity: 1;
-  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -476,7 +472,7 @@ footer i {
 .location input:focus {
   outline: none;
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   .location input {
     font-size: 18px;
   }
@@ -495,17 +491,18 @@ footer i {
   padding: 0 20px;
   margin: 0;
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   #mainTitle h1 {
-    font-size: 50px;
+    font-size: 35px;
     padding: 0;
+    margin-top: 35px;
   }
 }
 #mainTitle p {
   color: #353535;
   margin-bottom: 30px;
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   #mainTitle p {
     font-size: 22px;
   }
@@ -515,9 +512,9 @@ footer i {
     height: 40vh;
   }
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   #mainTitle {
-    height: 50vh;
+    height: 45vh;
     padding: 0 120px;
   }
 }
@@ -528,7 +525,8 @@ footer i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-sizing: content-box;
+  width: 100%;
+  box-sizing: border-box;
   padding: 40px 15px;
 }
 @media only screen and (min-width: 768px) {
@@ -536,13 +534,11 @@ footer i {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 40px 50px;
-    justify-content: center;
   }
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   #steps {
     padding: 50px 80px;
-    justify-content: center;
   }
 }
 #steps h2 {
@@ -562,10 +558,10 @@ footer i {
     margin: 10px;
   }
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   #steps a {
-    max-width: 280px;
-    margin: 15px;
+    max-width: 320px;
+    margin: 15px 35px;
     height: 280px;
   }
 }
@@ -596,12 +592,12 @@ footer i {
   background-color: #F6F6F6;
   width: 100%;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 10px;
   margin-bottom: 20px;
   margin-left: 12px;
   font-weight: bold;
-  box-shadow: 0px 5px 10px #e0e0e0;
+  box-shadow: 0px 6px 10px #cacaca;
 }
 #steps .stepsText:hover {
   background-color: #F5EDFF;
@@ -617,12 +613,9 @@ footer i {
     justify-content: center;
   }
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   #steps .stepsText {
     padding: 20px;
-  }
-  #steps .stepsText p {
-    font-size: 20px;
   }
 }
 #steps i {
@@ -656,7 +649,7 @@ footer i {
     margin-bottom: 40px;
   }
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   #restaurants {
     padding: 50px 80px;
     justify-content: center;
@@ -676,7 +669,7 @@ footer i {
   text-decoration: none;
   position: relative;
   margin-bottom: 20px;
-  box-shadow: 0px 5px 10px #e0e0e0;
+  box-shadow: 0px 6px 10px #cacaca;
 }
 @media only screen and (min-width: 768px) {
   #restaurants a {
@@ -684,7 +677,7 @@ footer i {
     margin: 16px;
   }
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   #restaurants a {
     margin: 30px;
     width: 35%;
@@ -714,7 +707,7 @@ footer i {
     height: 220px;
   }
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   #restaurants img {
     height: 280px;
   }
@@ -726,11 +719,6 @@ footer i {
   #restaurants h3 {
     margin-left: 15px;
     margin-bottom: 10px;
-  }
-}
-@media only screen and (min-width: 1240px) {
-  #restaurants h3 {
-    font-size: 20px;
   }
 }
 #restaurants p {
@@ -745,7 +733,6 @@ footer i {
   position: absolute;
   bottom: 25px;
   right: 30px;
-  padding: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

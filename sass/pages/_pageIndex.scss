@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e9e9e9;
+    background-color: #e9e9e9;  
     color: $darkgray; 
     i{
         margin-left: 50px;
@@ -20,11 +20,10 @@
         &:focus{
             outline: none;
         }
-        @media only screen and (min-width: 1240px){
+        @media only screen and (min-width: 1440px){
             font-size: 18px;
         }      
-    }
-    
+    }    
 }
 
 #mainTitle{
@@ -38,15 +37,16 @@
     h1{
         padding: 0 20px;
         margin:0;
-        @media only screen and (min-width: 1240px){
-            font-size: 50px;
+        @media only screen and (min-width: 1440px){
+            font-size: 35px;
             padding: 0;
+            margin-top:35px;
         }
     }
     p{ 
         color: $darkgray;  
         margin-bottom: 30px;
-        @media only screen and (min-width: 1240px){            
+        @media only screen and (min-width: 1440px){            
             font-size: 22px;
         }
     }
@@ -54,8 +54,8 @@
     @media only screen and (min-width: 768px){
         height: 40vh;
     }
-    @media only screen and (min-width: 1240px){
-        height: 50vh;
+    @media only screen and (min-width: 1440px){
+        height: 45vh;
         padding: 0 120px;
     }   
 }
@@ -66,20 +66,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-sizing: content-box;
+    width: 100%;
+    box-sizing: border-box;
     padding: 40px 15px;
     
     @media only screen and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
         padding: 40px 50px;
-        justify-content: center;
     }
     
-    @media only screen and (min-width: 1240px){
+    @media only screen and (min-width: 1440px){
         padding: 50px 80px;
-        justify-content: center;
     }
+
     h2{
         text-align: start;
         width: 90%;
@@ -94,9 +94,9 @@
             width: 28%;
             margin: 10px;
         }
-        @media only screen and (min-width: 1240px){
-            max-width: 280px;
-            margin: 15px;
+        @media only screen and (min-width: 1440px){
+            max-width: 320px;
+            margin: 15px 35px;
             height: 280px;
         }
     }
@@ -126,7 +126,7 @@
         background-color: $lightgray-bg;
         width: 100%;
         align-items: center;
-        border-radius: 20px;
+        border-radius: 25px;
         padding: 10px;
         margin-bottom: 20px;
         margin-left: 12px;
@@ -145,11 +145,8 @@
             text-align: center;
             justify-content: center;
         }
-        @media only screen and (min-width: 1240px){
-            padding: 20px;
-            p{
-                font-size: 20px;
-            }            
+        @media only screen and (min-width: 1440px){
+            padding: 20px;            
         }   
     }
     
@@ -180,7 +177,7 @@
         padding: 40px 30px;
         margin-bottom: 40px;     
     }  
-    @media only screen and (min-width: 1240px) {        
+    @media only screen and (min-width: 1440px) {        
         padding: 50px 80px;   
         justify-content: center;     
     }    
@@ -203,7 +200,7 @@
             width: 42%;
             margin: 16px;
         }
-        @media only screen and (min-width: 1240px){
+        @media only screen and (min-width: 1440px){
             margin: 30px;
             width: 35%;
         }
@@ -229,7 +226,7 @@
         @media only screen and (min-width: 768px){
             height: 220px;
         }
-        @media only screen and (min-width: 1240px){
+        @media only screen and (min-width: 1440px){
             height: 280px;
         }
     }
@@ -239,9 +236,6 @@
         @media only screen and (min-width: 768px){
             margin-left: 15px;
             margin-bottom: 10px;
-        }
-        @media only screen and (min-width: 1240px){
-            font-size: 20px;
         }
     }
 
@@ -255,8 +249,7 @@
     .fa-stack{
         position: absolute;
         bottom: 25px;
-        right: 30px;
-        padding: 2px;     
+        right: 30px;   
     }    
         
 }
