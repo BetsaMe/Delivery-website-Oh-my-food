@@ -414,7 +414,6 @@ footer i {
 }
 @media only screen and (min-width: 1024px) {
   .btn {
-    height: 60px;
     width: 340px;
     font-size: 18px;
     padding: 0 65px;
