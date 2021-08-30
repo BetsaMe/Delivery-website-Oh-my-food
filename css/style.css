@@ -435,17 +435,18 @@ footer i {
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-.fa-stack .fa-stack-1x {
-  font-size: 25px;
-}
-@media only screen and (min-width: 1440px) {
-  .fa-stack .fa-stack-1x {
-    font-size: 30px;
-  }
-}
 .fa-stack:hover > .fas {
   opacity: 1;
   background-repeat: no-repeat;
+}
+
+.fa-stack-1x {
+  font-size: 25px;
+}
+@media only screen and (min-width: 1440px) {
+  .fa-stack-1x {
+    font-size: 30px;
+  }
 }
 
 .location {
