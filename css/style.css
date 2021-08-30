@@ -143,7 +143,7 @@ footer i {
 }
 @media only screen and (min-width: 1024px) {
   footer {
-    padding: 50px 80px;
+    padding: 50px 100px;
   }
 }
 
@@ -416,7 +416,6 @@ footer i {
   .btn {
     width: 340px;
     padding: 0 65px;
-    margin: 60px 0;
   }
 }
 
@@ -507,7 +506,7 @@ footer i {
 }
 @media only screen and (min-width: 768px) {
   #mainTitle {
-    height: 40vh;
+    height: 30vh;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -519,29 +518,43 @@ footer i {
 
 #steps {
   background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#steps .container-steps {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  box-sizing: border-box;
-  padding: 40px 15px;
 }
 @media only screen and (min-width: 768px) {
-  #steps {
+  #steps .container-steps {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 40px 50px;
+    justify-content: space-between;
+    width: 90%;
+    box-sizing: border-box;
   }
 }
 @media only screen and (min-width: 1440px) {
-  #steps {
-    padding: 50px 80px;
+  #steps .container-steps {
+    width: 60%;
   }
 }
 #steps h2 {
   text-align: start;
-  width: 90%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 1440px) {
+  #steps h2 {
+    margin-bottom: 40px;
+  }
 }
 #steps a {
   display: flex;
@@ -552,14 +565,12 @@ footer i {
 @media only screen and (min-width: 768px) {
   #steps a {
     height: 220px;
-    width: 28%;
-    margin: 10px;
+    width: 30%;
   }
 }
 @media only screen and (min-width: 1440px) {
   #steps a {
     max-width: 320px;
-    margin: 15px 35px;
     height: 280px;
   }
 }
@@ -590,7 +601,7 @@ footer i {
   background-color: #F6F6F6;
   width: 100%;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 20px;
   padding: 10px;
   margin-bottom: 20px;
   margin-left: 12px;
@@ -635,27 +646,42 @@ footer i {
   align-items: center;
   justify-content: center;
   background-color: #F6F6F6;
-  box-sizing: content-box;
-  padding: 40px 15px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+}
+#restaurants .container-restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  #restaurants {
+  #restaurants .container-restaurant {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px 30px;
+    width: 90%;
+    justify-content: space-between;
     margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 1440px) {
-  #restaurants {
-    padding: 50px 80px;
-    justify-content: center;
+  #restaurants .container-restaurant {
+    width: 60%;
+    justify-content: space-between;
   }
 }
 #restaurants h2 {
   text-align: start;
-  width: 90%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 1440px) {
+  #restaurants h2 {
+    margin-bottom: 40px;
+  }
 }
 #restaurants a {
   display: flex;
@@ -671,14 +697,13 @@ footer i {
 }
 @media only screen and (min-width: 768px) {
   #restaurants a {
-    width: 42%;
-    margin: 16px;
+    width: 48%;
+    margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 1440px) {
   #restaurants a {
-    margin: 30px;
-    width: 35%;
+    margin-bottom: 60px;
   }
 }
 #restaurants .new {
