@@ -1,11 +1,7 @@
 .fa-stack{
     .fa-heart{
-        font-size: 24px; 
         padding: 2px;
         cursor: pointer;
-        @media only screen and (min-width: 1024px){
-            font-size: 30px;
-        }
     }
     .far{
         color: #949296;
