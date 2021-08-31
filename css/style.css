@@ -443,11 +443,14 @@ footer i {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 0%;
   opacity: 0;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 .heart-container:hover > .fas {
   opacity: 1;
+  background-size: 100%;
 }
 
 .location {
