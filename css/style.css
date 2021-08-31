@@ -444,7 +444,7 @@ footer i {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   opacity: 0;
-  transition: all 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 .heart-container:hover > .fas {
   opacity: 1;
