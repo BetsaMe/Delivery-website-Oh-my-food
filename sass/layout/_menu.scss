@@ -33,14 +33,15 @@
         @media only screen and (min-width: 768px){
             width: 90%;
         }  
+        h1{
+            font-family: 'shrikhand', sans-serif;
+            font-size: 27px;
+            margin-top: 25px;
+            margin-right: 20px;
+        }
         
     }
-    h1{
-        font-family: 'shrikhand', sans-serif;
-        font-size: 27px;
-        margin-top: 25px;
-        margin-right: 20px;
-    }
+    
 
     .containerMenu{
         width: 100%;
@@ -53,8 +54,7 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: flex-start;
-        }
-          
+        }          
     }
 
     .menuSection{

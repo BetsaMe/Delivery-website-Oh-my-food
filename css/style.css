@@ -186,7 +186,7 @@ footer i {
     width: 90%;
   }
 }
-.pageRestaurant h1 {
+.pageRestaurant .titleRestaurant h1 {
   font-family: "shrikhand", sans-serif;
   font-size: 27px;
   margin-top: 25px;
@@ -324,6 +324,7 @@ footer i {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .cardMenu .check i {
   font-size: 25px;
@@ -428,6 +429,7 @@ footer i {
 }
 .fa-stack .fas {
   background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
+  background-clip: content-box;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -686,35 +688,38 @@ footer i {
     margin-bottom: 40px;
   }
 }
-#restaurants a {
+#restaurants .cardsIndex {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 20px;
   background-color: #fff;
   width: 100%;
-  text-decoration: none;
   position: relative;
   margin-bottom: 20px;
   box-shadow: 0px 6px 10px #cacaca;
 }
 @media only screen and (min-width: 768px) {
-  #restaurants a {
+  #restaurants .cardsIndex {
     width: 48%;
     margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 1440px) {
-  #restaurants a {
+  #restaurants .cardsIndex {
     margin-bottom: 60px;
   }
+}
+#restaurants .cardsIndex a {
+  width: 100%;
+  text-decoration: none;
 }
 #restaurants .new {
   position: absolute;
   top: 10px;
   right: 10px;
   background-color: #99E2D0;
-  color: #269E80;
+  color: #208b71;
   padding: 7px 12px;
   font-size: 14px;
   font-weight: bold;
