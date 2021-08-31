@@ -420,14 +420,23 @@ footer i {
   }
 }
 
-.fa-stack .fa-heart {
-  padding: 2px;
-  cursor: pointer;
+.heart-container {
+  width: 30px;
+  height: 30px;
+  position: relative;
 }
-.fa-stack .far {
+.heart-container i.far {
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
   color: #949296;
 }
-.fa-stack .fas {
+.heart-container i.fas {
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
   background-clip: content-box;
   -webkit-background-clip: text;
@@ -435,20 +444,10 @@ footer i {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-.fa-stack:hover > .fas {
+.heart-container:hover > .fas {
   opacity: 1;
-  background-repeat: no-repeat;
-}
-
-.fa-stack-1x {
-  font-size: 25px;
-}
-@media only screen and (min-width: 1440px) {
-  .fa-stack-1x {
-    font-size: 30px;
-  }
 }
 
 .location {
@@ -760,7 +759,7 @@ footer i {
     margin-left: 15px;
   }
 }
-#restaurants .fa-stack {
+#restaurants .heart-container {
   position: absolute;
   bottom: 25px;
   right: 30px;
